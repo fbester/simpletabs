@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Responsive Tabs</title>
+
+    <link rel='stylesheet' href='src/simpletabs.css'>
+    <script src='src/simpletabs.js'></script>
+</head>
+<body>
+
+<!-- tab container -->    
+<div id='tab1' class='simple_tabs vert'>
+    <div class='header'>
+        <div class='tab active' data-id='1'>The Tab A</div>
+        <div class='tab'        data-id='2'>The Tab B</div>
+        <div class='tab'        data-id='3'>The Tab C</div>
+    </div>
+    <div class='body'>
+        <div class='title active'   data-id='1'>
+            The Tab A
+        </div>
+        <div class='content active' data-id='1'>
+            Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet
+            Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet
+            Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet
+        </div>
+        <div class='title'   data-id='2'>
+            The Tab B!
+        </div>
+        <div class='content' data-id='2'>
+            Content B
+        </div>
+        <div class='title'   data-id='3'>
+            The Tab C!
+        </div>
+        <div class='content' data-id='3'>
+            Content C
+        </div>
+    </div>
+</div>
+
+<!-- another instance -->
+<div id='tab2' class='simple_tabs horz'>
+    <div class='header'>
+        <div class='tab active' data-id='1'>LeTab A</div>
+        <div class='tab'        data-id='2'>LeTab B</div>
+        <div class='tab'        data-id='3'>LeTab C</div>
+    </div>
+    <div class='body'>
+        <div class='title active'   data-id='1'>
+            LeTab A
+        </div>
+        <div class='content active' data-id='1'>
+            LeContent A
+        </div>
+        <div class='title'   data-id='2'>
+            LeTab B
+        </div>
+        <div class='content' data-id='2'>
+            LeContent B LOREM ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet Content A lorem ipsum dolor simet
+        </div>
+        <div class='title'   data-id='3'>
+            LeTab C
+        </div>
+        <div class='content' data-id='3'>
+            LeContent C
+        </div>
+    </div>
+</div>
+
+<script>
+    
+var tab1 = new simple_tabs('tab1');
+var tab2 = new simple_tabs('tab2');
+
+console.log(tab1);
+console.log(tab2);
+
+</script>
+
+</body>
+</html>

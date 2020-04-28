@@ -1,0 +1,108 @@
+/* Base */
+
+.simple_tabs {
+    box-sizing:border-box;
+    position:relative;
+    width:100%;
+    background-color:#eee;
+}
+
+.simple_tabs::after {
+    content:"";
+    clear:both;
+    display:table;
+}
+
+.simple_tabs * {
+    box-sizing:border-box;
+}
+
+.simple_tabs .header {
+    position:relative;
+    float:left;
+    background:#ddd;
+}
+
+.simple_tabs .header .tab {
+    position:relative;
+    padding:1em;
+    cursor:pointer;
+}
+
+.simple_tabs .header .tab.active, .simple_tabs .body .title.active {
+    background-color:#555;
+    color:#fff;
+}
+
+.simple_tabs .header .tab:hover, .simple_tabs .body .title:hover {
+    background-color:#777;
+    color:#fff;
+}
+
+.simple_tabs .body {
+    position:relative;
+    float:left;
+}
+
+.simple_tabs .body::after {
+    content: "";
+    clear:both;
+    display:table;
+}
+
+.simple_tabs .body .title {
+    display: none;
+    padding:1em;
+    cursor:pointer;
+}
+
+.simple_tabs .body .content {
+    display:none;
+    position:relative;
+    padding:1em;
+}
+
+.simple_tabs .body .content.active {
+    display:block;
+}
+
+/* Vertical */
+
+.simple_tabs.vert .header {
+    width:35%;    
+}
+
+.simple_tabs.vert .body {
+    width:65%;
+}
+
+/* Horizontal */
+
+.simple_tabs.horz .header, .simple_tabs.horz .body {
+    width:100%;
+}
+
+.simple_tabs.horz .header .tab {
+    display:block;
+    float:left;
+}
+
+/* Accordion */
+
+@media (max-width:768px) {
+    .simple_tabs .header {
+        display:none;
+    }
+
+    .simple_tabs.vert .body, .simple_tabs.horz .body {
+        width:100%;
+    }
+
+    .simple_tabs .body {
+        position:relative;
+    }
+
+    .simple_tabs .body .title {
+        display:block;
+    }
+}
