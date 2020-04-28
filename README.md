@@ -1,8 +1,10 @@
-# simpletabs
-Vanilla JavaScript Tabs - Responsive too.
+# Simple Responsive Tabs
 
+Responsive tab layouts written in Vanilla JavaScript.
 Vertical and Horizontal layouts supported. Chrome, Firefox, IE9+
 
-Usage:
+**Usage**:
 
-var tabs = new simple_tabs('id_selector');
+Make sure both the JS and CSS files are enqueued, then simply:
+
+```var tabs = new simple_tabs('id_selector');```
